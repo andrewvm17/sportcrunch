@@ -74,7 +74,7 @@ ELLIPSE_LABEL_ANNOTATOR = sv.LabelAnnotator(
 class Mode(Enum):
     SKATER_DETECTION = 'SKATER_DETECTION'
 
-# frame-by-frame skater detection
+# frame-by-frame skater detection, using Roboflow inference API
 def run_skater_detection(src_vid_path: str, device:str) -> Iterator[np.ndarray]:
     if device == "mps" and torch.backends.mps.is_available():
         device = torch.device("mps")
