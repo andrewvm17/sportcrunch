@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# But not main.py
+!main.py
+
+# Also don't ignore .gitignore itself
+!.gitignore
